@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>All Issues</h2>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th class="priority">Priority</th>
+        <th class="status">Status</th>
+        <th class="assigned_to">Assigned To</th>
+    </tr>
+    {% for issue in issues %}
+    <tr>
+        <td>{{ issue.title }}</td>
+        <td>{{ issue.description }}</td>
+        <td class="priority">{{ issue.priority }}</td>
+        <td class="status">{{ issue.status }}</td>
+        <td class="assigned_to">{{ issue.assigned_to }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

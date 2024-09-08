@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212020;
+    color: white;
+    margin: 0;
+    padding: 20px; /* Add padding around the entire content */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 10px; /* Make header rounded */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Separate borders to apply border-radius */
+    border-spacing: 0; /* No gaps between cells */
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners for the whole table */
+    overflow: hidden; /* Prevent table content from overflowing the rounded corners */
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    overflow-wrap: break-word; /* Ensure long words break and wrap */
+    word-break: break-all; /* Break words that are too long */
+    white-space: normal; /* Allow text to wrap */
+    border-radius: 0; /* Remove individual corner rounding to align with table */
+}
+
+th {
+    background-color: #333;
+}
+
+/* Make the columns longer */
+td.status, td.priority, td.assigned_to {
+    min-width: 150px; /* Set minimum width for these columns */
+}
+
+input, textarea, select, button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 8px; /* Rounded inputs */
+}
+
+input[type="text"], textarea {
+    height: 40px;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+button {
+    background-color: #555;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded buttons */
+}
+
+button:hover {
+    background-color: #777;
+}
+
+main {
+    max-width: 1200px; /* Limit the main content width */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px; /* Add padding inside the main content */
+    border-radius: 10px; /* Rounded content area */
+    background-color: #2a2a2a; /* Slightly different dark background */
+}
